@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="home-test-mobile" verbose="1">
+
+    <test name="Authentication">
+        <groups>
+            <run>
+                <include name="auth"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.hometestmobile.tests.LoginTest"/>
+            <class name="com.hometestmobile.tests.InputValidationTest"/>
+        </classes>
+    </test>
+
+    <test name="Catalog">
+        <groups>
+            <run>
+                <include name="catalog"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.hometestmobile.tests.CatalogTest"/>
+        </classes>
+    </test>
+
+    <test name="Registration">
+        <groups>
+            <run>
+                <include name="registration"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.hometestmobile.tests.RegistrationTest"/>
+        </classes>
+    </test>
+
+</suite>
